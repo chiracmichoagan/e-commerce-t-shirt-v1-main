@@ -95,7 +95,7 @@ function RouteComponent() {
               <button className="text-xs text-amber-600 underline hover:text-amber-700">Guide des tailles</button>
             </div>
             <div className="flex flex-wrap gap-2">
-              {product.sizes.map((size: number) => (
+              {product.sizes.map((size: string) => (
                 <button
                   key={size}
                   onClick={() => setSelectedSize(size)}
